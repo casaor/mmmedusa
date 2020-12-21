@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <title>MMMEDUSA Festival</title>
+        <meta name="author" content="Carlota Sas">
+        <meta name="description" content="MMMedusa es un festival de gastronomía del futuro que se celebra durante el mes de julio en Barcelona y de noche.">
+        <link rel="shortcut icon" href="img/medusa.png" type="image/png">
+        <link rel="stylesheet" href="css/jquery.bxslider.css">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="css/jquery.bxslider.min.js"></script>
+
+        <script>
+        $(document).ready(function(){
+        $('.slider').bxSlider({
+        mode: 'horizontal',
+        infiniteLoop: true,
+        speed: 1500,
+        pause: 7000,
+        auto: true,
+        pager: false,
+        controls: false,
+        autoHover:true
+        }); 
+        });
+        </script>
+
+    </head>
+
+
+    <body>
+
+        <header>
+
+            <h1>MMMEDUSA</h1>
+            <div id="navegacion">
+                <nav>
+                    <ul>
+                        <li><a href="">_A la carta</a></li>
+                        <li><a href="">_El Festival</a></li>
+                        <li><a href="">_Los menús</a></li>
+                        <li><a href="">_A la última</a></li>
+                        <li><a href="">_Planea</a></li>
+                    </ul>
+                </nav>
+                <a href="" class="boton2">Get your menu</a>
+                <button id="burger">+</button>
+            </div> 
+
+        </header>
+
+
+        <main>
+
+            <section class="slider">
+                
+                <div id="portada1" title="Forsman & Bodenfors">
+                    <div>
+                    <p>Barcelona_24/25/26_Julio_2020</p>
+                    <h2>gastronomía del futuro de noche en verano</h2>
+                    </div>
+
+                    <a href="" class="boton">MMMEDUSA Festival</a>
+                </div>
+
+                <div id="portada2" title="Lukas Vojir">
+                    <div>
+                    <h2>nuevos ingredientes para el menú de mañana</h2>
+                    </div>
+
+                    <a href="" class="boton">Reserva tu mesa</a>
+                </div>
+
+                <div id="portada3" title="Miki Nemcek">
+                    <div>
+                    <h2>45 eventos<br>3 días<br>27 speakers<br>8 cocinas</h2>
+                    </div>
+
+                    <a href="" class="boton">Mira la carta</a>
+                </div>
+
+            </section>
+
+            <!--<section id="portada">
+
+                <div>
+                    <p>Barcelona_24/25/26_Julio_2020</p>
+                    <h2>gastronomía del futuro de noche en verano</h2>
+                </div>
+
+                <a href="" class="boton">MMMEDUSA Festival</a>
+
+            </section> 
+
+            Esto es sin slider-->
+
+
+            <aside>
+
+                <div class="marquee">
+                    <div class="track">
+                        <div class="content">Foodpairing // Linda Deakin // Ángel León // IA y cocina domótica // 0% food // Sabores imposibles // Foodpairing // Linda Deakin // Ángel León // IA y cocina domótica // 0% food // Sabores imposibles //
+                	   </div>
+                	</div>
+                </div>
+
+            </aside>
+            
+
+            <section id="actividades">
+
+                <a id="sushi" class="horizontal" href="https://globetrender.com/2019/04/01/sushi-singularity-3d-printed-food-biometric-data/" target="_blank">Sushi</a>
+
+                <div class="flip-card">
+  					<div class="flip-card-inner">
+    					<div class="flip-card-front">
+      						<article id="cocina">
+                    			<h4>Cocina</h4>
+                    			<a href="" id="actividad">Subversión</a>
+                    			<div>
+                        			<p>Cocina con nuevos ingredientes</p>
+                        			<p class="bold">Andoni Luis Aduriz</p>
+                    			</div>
+                    			<h4 class="lugar">24/07_Ágora</h4>
+                			</article>
+    					</div>
+    					<div class="flip-card-back">
+    							<article id="cocina">
+                    			<h4>Cocina</h4>
+                    			<a href="" id="actividad">Medusas</a>
+                    			<div>
+                        			<p>Aprende a cocinar la comida del futuro</p>
+                        			<p class="bold">Carme Ruscalleda</p>
+                    			</div>
+                    			<h4 class="lugar">25/07_Ágora</h4>
+                				</article>
+    					</div>
+  					</div>
+				</div>
+
+                <div class="flip-card">
+  					<div class="flip-card-inner">
+    					<div class="flip-card-front">
+    						<article id="tecnologia">
+                    			<h4>Tecnología</h4>
+                    			<a href="" id="actividad">Foodpairing</a>
+                    			<div>
+                        			<p>La app que mezcla sabores aleatoriamente</p>
+                        			<p class="bold">Peter Coucquyt</p>
+                    			</div>
+                    			<h4 class="lugar">25/07_Pavellón</h4>
+                			</article>
+                		</div>
+    					<div class="flip-card-back">
+    						<article id="tecnologia">
+                    			<h4>Tecnología</h4>
+                    			<a href="" id="actividad">AI Cooking</a>
+                    			<div>
+                        			<p>Robots en la cocina: una realidad cercana</p>
+                        			<p class="bold">Sony Corporation</p>
+                    			</div>
+                    			<h4 class="lugar">26/07_Espacio USB</h4>
+                			</article>
+                		</div>
+  					</div>
+				</div>
+                
+                <div class="flip-card">
+  					<div class="flip-card-inner">
+    					<div class="flip-card-front">
+    						<article id="diseno">
+                    			<h4>Diseño</h4>
+                    			<a href="" id="actividad">Vasos Eco</a>
+                    			<div>
+                        			<p>Diseño de vasos con residuo 0</p>
+                        			<p class="bold">Anna Bassas</p>
+                    			</div>
+                    			<h4 class="lugar">25/07_Espacio USB</h4>
+                			</article>
+                		</div>
+    					<div class="flip-card-back">
+    						<article id="diseno">
+                    			<h4>Diseño</h4>
+                    			<a href="" id="actividad">Sistemas</a>
+                    			<div>
+                        			<p>Diseñar el sistema alimentario del futuro</p>
+                        			<p class="bold">Linda Deakin</p>
+                    			</div>
+                    			<h4 class="lugar">26/07_Ágora</h4>
+                			</article>
+                		</div>
+  					</div>
+				</div>
+
+                <a id="tenedor" class="unidad" href="https://xk.studio/0-Food" target="_blank">Tenedor</a>
+
+                <a id="andoni" class="unidad" href="https://www.mugaritz.com" target="_blank">Andoni</a>
+
+                <div class="flip-card">
+  					<div class="flip-card-inner">
+    					<div class="flip-card-front">
+    						<article id="degustacion">
+                    			<h4>Degustación</h4>
+                    			<a href="" id="actividad">Comida 3D</a>
+                    			<div>
+                        			<p>Comida impresa con materiales comestibles</p>
+                        			<p class="bold">Fundació Alícia</p>
+                    			</div>
+                    			<h4 class="lugar">24/07_Pavellón</h4>
+                			</article>
+               			</div>
+    					<div class="flip-card-back">
+    						<article id="degustacion">
+                    			<h4>Degustación</h4>
+                    			<a href="" id="actividad">Liofilizados</a>
+                    			<div>
+                        			<p>Comida lista para llevar con todo el sabor</p>
+                        			<p class="bold">Semon</p>
+                    			</div>
+                    			<h4 class="lugar">25/07_Pavellón</h4>
+                			</article>
+                		</div>
+  					</div>
+				</div>
+
+            </section>
+
+
+            <section id="planea">
+
+                <a href="" class="boton">Planea tu visita</a>
+
+            </section>
+
+
+            <section id="novedades">
+                
+                <a id="pincho" class="vertical" href="http://www.elsayranzo.com/old/2017/01/15/the-future-of-food/" target="_blank">Pincho</a>
+
+                <article id="sistema" class="unidad">
+                    <h2 class="titular">diseñar un nuevo sistema alimentario</h2>
+                    <h4 class="autor">Por Linda Deakin</h4>
+                    <a href="" id="noticias">+ en el blog</a>
+                </article>
+
+                <a id="capas" class="unidad" href="https://xk.studio/0-Food" target="_blank">Capas</a>
+
+                <article id="sulfitos" class="unidad">
+                    <h2 class="titular">la comida del futuro no tendrá sulfitos</h2>
+                    <h4 class="autor">Por Laura Alba</h4>
+                    <a href="" id="noticias">+ noticias</a>
+                </article>
+
+                <a id="bola" class="unidad" href="https://space10.com/project/tomorrows-meatball/" target="_blank">Bola</a>
+
+                <article id="medusa" class="unidad">
+                    <h2 class="titular">recetas caseras con medusas</h2>
+                    <h4 class="autor">Por Rita Truffaut</h4>
+                    <a href="" id="noticias">+ en el blog</a>
+                </article>
+
+                 <article id="dieta" class="unidad">
+                    <h2 class="titular">media humanidad a dieta en 2060 </h2>
+                    <h4 class="autor">Por Alex Roca</h4>
+                    <a href="" id="noticias">+ noticias</a>
+                </article>
+                
+            
+            </section>
+
+
+        </main>
+
+
+        <footer>
+
+
+            <section id="footer-social">
+                <div class="contenedor-social">
+                    <a id="instagram" href="">Instagram</a>
+                    <a id="twitter" href="">Twitter</a>
+                    <a id="facebook" href="">Facebook</a>
+                    <a id="youtube" href="">Youtube</a>
+                    <a id="mail" href="">Mail</a>
+                </div>
+            </section>
+
+
+            <section id="creditos">
+            	<div id="contacto">
+                <p>© MMMEDUSA FESTIVAL   //   T +34 93 567 34 54   //   hello@mmmedusa.com</p>
+                </div>
+
+                <div id="patrocinadores">
+                    <p>Patrocina</p>
+                    <a id="aj" class="logo" href="https://meet.barcelona.cat/ca/descobreix-barcelona/viu-barcelona/gastronomia" target="_blank">Ajuntament</a>
+                    <a id="fa" class="logo" href="http://www.alicia.cat/ca/" target="_blank">Fundació Alícia</a>              
+                </div>
+
+                <div id="final">
+                    <a href="" class="boton3">Suscríbete a nuestra newsletter</a>
+                    <p>Aviso legal</p>
+                </div>
+
+            </section>
+
+        </footer>
+
+    </body>
+</html>
