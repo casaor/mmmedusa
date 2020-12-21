@@ -46,119 +46,128 @@
     font-style: normal;
 }
 
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 
 body {
-	margin:0;
-	font-family:Agrandir-Regular;
-	font-size:14px;
+	font-family: 'Agrandir-Regular';
+	font-size: 1.2rem;
 	background-image: linear-gradient(#E1EFF6, #D9F1DE);
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+button {
+	background-color: #ffffff;
+	border: solid 1px #000000;
+	border-radius: none;
+	padding: 8px 20px 2px 20px;
+	text-align: center;
+	color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Agrandir-Regular';
+	font-size: 1.2rem;
+	transition: all .1s ease-in-out;
+}
+    
+button:hover {
+	background-image: linear-gradient(to bottom right, #E1EFF6, #D9F1DE);
+    transform: scale(1.05);
+	will-change: transform;
 }
 
 
 header {
+	top:0;
+	width: 100%;
 	height: 76px;
 	background-color: #ffffff;
 	border-bottom: solid 1px #000000;
-	padding-top: 25px;
-	padding-left: 60px;
-	padding-right: 60px;
-	box-sizing: border-box;
-	overflow: hidden;
+	display: flex;
+	align-items: center;
+	padding-left: 35px;
+	padding-right: 35px;
 	position: fixed;
-  	top: 0;
-  	width: 100%;
-  	z-index:99999;
+	z-index:99999;
+	opacity: 0.97;
 }
 
 header h1 {
-	margin: 0;
-	float: left;
 	background-image: url('../img/logo-mmmedusa.png');
-	width:246px;
-	height:25px;
+	background-repeat: no-repeat;
+	width:25%;
 	text-indent: -999999px;
-	position:relative;
+	margin-top: 25px;
+	cursor: pointer;
 }
 
-#navegacion {
-	float:right;
-	width: 68%;
-	height: 76px;
-	text-align: left;
-	margin: 0;
+nav {
+	width: 50%;
+
 }
 
 nav ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 	list-style:none;
-	padding-top: 3px;
-	margin:0;
 }
 
 nav ul li {
-	float:left;
-	width: 15.6%;
 	text-align: center;
 	text-transform:uppercase;
 	letter-spacing: 0.6px;
-	font-size:1.285em;
-	position:relative;
+	margin-top: 5px;
 }
 
 nav ul li a {
 	color: black;
-	text-decoration: none;
-	display: block;
-	width: 80%;
+	transition: all .1s ease-in-out;
 }
 
 nav ul li a:hover {
-	color: grey;
+	transform: scale(1.1);
+	will-change: transform;
 }
 
-.boton2 {
-	display: block;
-	background-color: #ffffff;
-	border: solid 1px #000000;
-	width: 145px;
-	height: 31px;
-	text-align: center;
-	color: #000000;
-	line-height: 31px;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 0.928em;
-	float: left;
-	box-sizing: border-box;
-	margin-right: 55px;
-  	top: 50%;
-  	-ms-transform: translateY(-25%);
-  	transform: translateY(-25%);
+.botons {
+	width: 25%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 }
 
-button {
+#burger {
 	border: none;
 	background-color: transparent;
 	background-image: url('../img/mes.png');
 	width:27px;
 	height:27px;
-	text-indent: -999999px;
-	margin: 0;
+	margin-left: 15%;
 	padding: 0;
-	float: left;
-	position: absolute;
-  	top: 50%;
-  	-ms-transform: translateY(-58%);
-  	transform: translateY(-58%);
 }
 
+
+main {
+	margin-top: 76px;	
+}
 
 .bxslider {
  	margin: 0;
  	padding: 0;
   	width: 100%;  
   	height: 758px;
-  	border: 0;
-  	box-sizing: border-box;
 }
 
 .bx-wrapper {
@@ -167,8 +176,6 @@ button {
     width: 100%;
     height: 758px;
     border: 0; 
-    box-sizing: border-box;
-  	position: relative;
 }
 
 .bx-wrapper .bx-viewport { 
@@ -183,53 +190,57 @@ button {
  }
 
 h2 {
-	font-family:Agrandir-GrandLight;
-	font-size:4.8em;
+	font-family: 'Agrandir-GrandLight';
+	font-size: 3em;
 	font-weight:normal;
-	margin:0;
 	letter-spacing: 0.6px;
 	line-height: 1.07;
+	margin-bottom: 2%;
+	width:450px;
+}
+
+.slider button {
+	font-size:1.5em;
+}
+
+.boton:hover {
+	cursor: pointer;
 }
 
 #portada1 {
-	margin-top: 76px;
 	width: 100%;
 	height:758px;
 	background-image: url('../img/forsman.png');
 	background-position: center;
-	background-size:cover;
-	padding-top:50px;
-	padding-left:60px;
+	background-size: cover;
 	border: 0;
+	display: flex;
+	justify-content: flex-end
 }
 
-#portada1 div {
-	width:495px;
-	margin-top:30px;
-	margin-left:760px;
+.txt_portada1{
+	width: 50%;
+	height: 90%;
+	align-self: flex-end;
 }
 
-#portada1 div p {
+.txt_portada1 p {
 	font-size:1.785em;
 	margin:0.5em 0;
 	text-transform:uppercase;
 	letter-spacing: 0.6px;
 }
 
-#portada1 .boton {
-	margin-top:11px;
-	margin-left: 765px;
-}
-
 #portada2 {
-	margin-top: 76px;
 	width: 100%;
 	height:758px;
 	background-image: url('../img/vojir.png');
 	background-position: center;
 	background-size:cover;
-	padding-top:50px;
-	padding-left:60px;
+	border: 0;
+	display: flex;
+	justify-content: flex-end
+	
 }
 
 #portada2 div {
@@ -248,7 +259,6 @@ h2 {
 }
 
 #portada3 {
-	margin-top: 76px;
 	width: 100%;
 	height:758px;
 	background-image: url('../img/plat.png');
@@ -271,24 +281,6 @@ h2 {
 #portada3 .boton {
 	margin-top:11px;
 	margin-left: 486px;
-}
-
-.boton {
-	display:block;
-	background-color: #ffffff;
-	border:solid 1px #000000;
-	width:274px;
-	height:48px;
-	text-align:center;
-	color:#000000;
-	line-height:52px;
-	text-decoration: none;
-	text-transform:uppercase;
-	font-size:1.714em;
-}
-
-.boton: hover{
-	cursor: pointer;
 }
 
 

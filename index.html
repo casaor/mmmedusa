@@ -10,22 +10,8 @@
         <link rel="stylesheet" href="css/jquery.bxslider.css">
         <link rel="stylesheet" type="text/css" href="css/estilos.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="css/jquery.bxslider.min.js"></script>
-
-        <script>
-        $(document).ready(function(){
-        $('.slider').bxSlider({
-        mode: 'horizontal',
-        infiniteLoop: true,
-        speed: 1500,
-        pause: 7000,
-        auto: true,
-        pager: false,
-        controls: false,
-        autoHover:true
-        }); 
-        });
-        </script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script src="js/slider.js"></script>
 
     </head>
 
@@ -34,19 +20,19 @@
 
         <header>
 
-            <h1>MMMEDUSA</h1>
-            <div id="navegacion">
-                <nav>
-                    <ul>
-                        <li><a href="">_A la carta</a></li>
-                        <li><a href="">_El Festival</a></li>
-                        <li><a href="">_Los menús</a></li>
-                        <li><a href="">_A la última</a></li>
-                        <li><a href="">_Planea</a></li>
-                    </ul>
-                </nav>
-                <a href="" class="boton2">Get your menu</a>
-                <button id="burger">+</button>
+            <h1><a href="#index.html">MMMEDUSA</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="">_A la carta</a></li>
+                    <li><a href="">_El Festival</a></li>
+                    <li><a href="">_Los menús</a></li>
+                    <li><a href="">_A la última</a></li>
+                    <li><a href="">_Planea</a></li>
+                </ul>
+            </nav>
+            <div class="botons">
+                <button>Get your menu</button>
+                <a href="" id="burger"></a>
             </div> 
 
         </header>
@@ -56,45 +42,29 @@
 
             <section class="slider">
                 
-                <div id="portada1" title="Forsman & Bodenfors">
-                    <div>
-                    <p>Barcelona_24/25/26_Julio_2020</p>
-                    <h2>gastronomía del futuro de noche en verano</h2>
+                <article id="portada1" title="Forsman & Bodenfors">
+                    <div class="txt_portada1">
+                        <p>Barcelona_24/25/26_Julio_2021</p>
+                        <h2>gastronomía del futuro de noche<br> en verano</h2>
+                        <button>MMMEDUSA Festival</button>
                     </div>
+                </article>
 
-                    <a href="" class="boton">MMMEDUSA Festival</a>
-                </div>
-
-                <div id="portada2" title="Lukas Vojir">
-                    <div>
-                    <h2>nuevos ingredientes para el menú de mañana</h2>
+                <article id="portada2" title="Lukas Vojir">
+                    <div class="txt_portada2">
+                        <h2>nuevos ingredientes para el menú<br>de mañana</h2>
+                        <button>Reserva tu mesa</button>
                     </div>
+                </article>
 
-                    <a href="" class="boton">Reserva tu mesa</a>
-                </div>
-
-                <div id="portada3" title="Miki Nemcek">
-                    <div>
-                    <h2>45 eventos<br>3 días<br>27 speakers<br>8 cocinas</h2>
+                <article id="portada3" title="Miki Nemcek">
+                    <div class="txt_portada3">
+                        <h2>45 eventos<br>3 días<br>27 speakers<br>8 cocinas</h2>
+                        <button>Mira la carta</button>
                     </div>
-
-                    <a href="" class="boton">Mira la carta</a>
-                </div>
+                </article>
 
             </section>
-
-            <!--<section id="portada">
-
-                <div>
-                    <p>Barcelona_24/25/26_Julio_2020</p>
-                    <h2>gastronomía del futuro de noche en verano</h2>
-                </div>
-
-                <a href="" class="boton">MMMEDUSA Festival</a>
-
-            </section> 
-
-            Esto es sin slider-->
 
 
             <aside>
